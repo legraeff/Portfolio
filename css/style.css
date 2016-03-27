@@ -1,0 +1,49 @@
+    body {
+      padding-top: 30px;
+      font-size: 200%;
+      color: white;
+      font-family: 'Abel', sans-serif;
+    }
+    
+    p {
+      margin: 30px 40px 30px 40px;
+    }
+    
+    .jumbo {
+      margin: 0;
+      padding: 150px 0 150px 0;
+    }
+    
+    .btn-default {
+      width: 150px;
+    }
+    
+    #home {
+      background: linear-gradient(to bottom, black, pink)
+    }
+    
+    #about {
+      background: linear-gradient(to bottom, pink, black)
+    }
+    
+    #portfolio {
+      background: linear-gradient(to bottom, black, pink)
+    }
+    
+    #contact {
+      background: linear-gradient(to bottom, pink, black)
+    }
+    
+    .black {
+      color: black;
+    }
+    
+    img {
+      max-height: 300px;
+      max-width: 300px;
+      transition: opacity 0.25s;
+    }
+
+img:hover {
+  opacity: 0.25;
+}
