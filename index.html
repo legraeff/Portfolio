@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8">
     <title>Portfolio</title>
-    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
     
     
     <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
@@ -17,101 +19,105 @@
 
   <body>
 
-    <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+    <head>
+  <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
 
-<nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container-fluid">
+<body>
+
+  <nav class="navbar navbar-default navbar-fixed-top">
     <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+          <i id="glyph-caret" class="fa fa-caret-down" aria-hidden="true"></i>
+        </button>
+      <button id="togglesun" type="button" class="btn btn-link navbar-brand">
+          <i id="glyph-sun" class="fa fa-sun-o" aria-hidden="true"></i>
+        </button>
       <a class="navbar-brand" href="#">Letícia Graeff</a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="#home">home</a></li>
-      <li><a href="#about">about</a></li>
-      <li><a href="#portfolio">portfolio</a></li>
-      <li><a href="#contact">contact</a></li>
-    </ul>
-  </div>
-</nav>
+    </div>    <!--NavBar Header-->
+
+    <div class="collapse navbar-collapse" id="navbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#home">home</a></li>
+        <li><a href="#about">about</a></li>
+        <li><a href="#portfolio">portfolio</a></li>
+        <li><a href="#contact">contact</a></li>
+      </ul>
+    </div>    <!--Collapse-->
+  </nav>
 
 
-<section id="home">
-  <div class="jumbo">
-    <h1 class="text-center"> Welcome </h1>
-    <p class="text-center">
-      Hello. My name is Letícia and this is my portfolio. I will be using this space to showcase the projects that I've already finished.
-    </p>
-
-    <div class="btn-group col-sm-6 col-sm-offset-3 text-center">
-      <button type="button" class="btn btn-default"><a href="https://twitter.com/elegraeff"> Twitter </a></button>
-      <button type="button" class="btn btn-default"><a href="http://www.freecodecamp.com/legraeff"> FreeCodeCamp </a></button>
-      <button type="button" class="btn btn-default"><a href="https://github.com/legraeff"> GitHub </a></button>
-      <button type="button" class="btn btn-default"><a href="http://codepen.io/legraeff/"> Codepen </a> </button>
-    </div>
-  </div>
-  </div>
-
-</section>
-
-<section id="about">
-  <div class="jumbo">
-    <h2 class="text-center">About </h2>
-    <p class="text-center">
-      My interest in programming is very recent. I was attracted to it by my boyfriend, who works in this area. I've been learning HTML, CSS, JavaScript and Python and will start college to develop these and other desired skills.
-      <p class="text-center"> Before falling in love with programming, I studied my other passion. I obtained my degree in International Relations in 2015 and I intend to start a Masters program later in life. </p>
-      <p class="text-center">
-        Other than that, I'm 22 years old, Brazilian, in love with traveling and puppies. </p>
-  </div>
-</section>
-
-<section id="portfolio">
-  <div class="container">
+  <section id="home">
     <div class="jumbo">
-      <h2 class="text-center">
-      Portfolio        </h2>
-      <p class="text-center">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="thumbnail">
-          <a href="http://codepen.io/legraeff/full/PNPLEV/">  <img src="http://res.cloudinary.com/dvpxgbx82/image/upload/v1459038378/Random_Quotes_j8bctq.png"/> </a>
-            <div class="caption">
-              <p class="text-center black">Quote Generator</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="thumbnail">
-            <a href=http://codepen.io/legraeff/full/aNpgbY/>
-            <img src="http://res.cloudinary.com/dvpxgbx82/image/upload/v1459038377/weather_wvcwlr.png"/> </a>
-            <div class="caption">
-              <p class="text-center black">Weather App</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6">
-          <div class="thumbnail">
-            <a href="http://codepen.io/legraeff/full/ZQgrJJ/"><img src="https://ntpinto.files.wordpress.com/2013/08/fotografia.jpg"/> </a>
-            <div class="caption">
-              <p class="text-center black">Tribute Page</p>
-            </div>
-          </div>
-        </div>
-         </div>
-    </div>
-  </div>
-  </div>
-</section>
+      <h1 class="text-center"> Welcome </h1>
+      
+      <p class="text-center"> Hello. My name is Letícia and this is my portfolio. I will be using this space to showcase the projects that I've already finished. </p>
+      <div class="col-md-6 col-md-offset-3 text-center">
+        <div class="btn-group">
+          <button type="button" class="btn btn-default"><a href="https://twitter.com/elegraeff"> <i class="fa fa-twitter" aria-hidden="true"></i> Twitter </a></button>
+          <button type="button" class="btn btn-default"><a href="https://github.com/legraeff"> <i class="fa fa-github" aria-hidden="true"></i> GitHub </a></button>
+          <button type="button" class="btn btn-default"><a href="http://codepen.io/legraeff/"><i class="fa fa-codepen" aria-hidden="true"></i> Codepen </a> </button>
+          <button type="button" class="btn btn-default"><a href="http://www.freecodecamp.com/legraeff"> FreeCodeCamp </a></button>
+        </div>        <!--Btn Group-->
+      </div>      <!--Grid-->
+    </div>    <!--Jumbo-->
+  </section>
 
-<section id="contact">
-  <div class="jumbo">
-    <h2 class="text-center">
-      Contact<br> </h2>
-    <p class="text-center"> leticia.graeff@gmail.com </p>
-  </div>
-</section>
+
+  <section id="about">
+    <div class="jumbo">
+      <h2 class="text-center">About </h2>
+      <p class="text-center"> My interest in programming is fairly recent, but it was certainly a spurt of growth that I never expected to happen. I've been learning HTML, CSS and JavaScript, as well as some related frameworks and libraries. I've started college in 2016 to develop these and other desired skills. </p>
+      <p class="text-center"> Before falling in love with programming, I studied my other passion. I obtained my degree in International Relations in 2015 and I intend to start a Masters program later in life. </p>
+
+    </div> <!--Jumbo-->
+  </section>
+
+
+  <section id="portfolio">
+    <div class="jumbo">
+      <h2 class="text-center">Portfolio </h2>
+      <div class="container" id="slide">
+        
+        <div style="display: inline-block;">
+          <a href="http://codepen.io/legraeff/full/ZQgrJJ/">
+            <img src="http://res.cloudinary.com/dvpxgbx82/image/upload/v1464888638/fotografia_f0ux3e.jpg" /> </a>
+        </div> <!--Imagem Slide 1-->
+
+        <div>
+          <a href="http://codepen.io/legraeff/full/PNPLEV/">
+            <img src="http://res.cloudinary.com/dvpxgbx82/image/upload/v1459038378/Random_Quotes_j8bctq.png" /> </a>
+        </div> <!--Imagem Slide 2-->
+
+        <div>
+          <a href=http://codepen.io/legraeff/full/aNpgbY/>
+            <img src="http://res.cloudinary.com/dvpxgbx82/image/upload/v1459038377/weather_wvcwlr.png" /> </a>
+        </div> <!--Imagem Slide 3-->
+      
+      </div> <!--Container-->
+         <div class="col-sm-offset-5 col-sm-2 text-center">
+        <button class="next btn btn-default">
+          <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+        </button>
+      </div> <!--Button Grid Center-->
     
-    
+    </div> <!--Jumbo-->
+  </section>
+
+
+  <section id="contact">
+    <div class="jumbo">
+      <h2 class="text-center"> Contact </h2>
+      <p class="text-center"> leticia.graeff@gmail.com </p>
+    </div> <!--Jumbo-->
+  </section>
+
+</body>
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+
+        <script src="js/index.js"></script>
+
     
     
     
