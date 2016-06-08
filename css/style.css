@@ -1,49 +1,58 @@
     body {
-      padding-top: 30px;
-      font-size: 200%;
+        padding-top: 30px;
+        font-size: 200%;
+        font-family: 'Abel', sans-serif;
+        background-image: url('http://res.cloudinary.com/dvpxgbx82/image/upload/v1464981680/download_1_xs0pzc_daymode_mqpo8y.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        color: black;
+      }
+
+      *::selection {
+  background-color: pink;
+        }
+      
+      p {
+        margin: 30px 40px 30px 40px;
+      }
+      
+      .jumbo {
+        margin: 0;
+        padding: 200px 0 200px 0;
+      }
+      
+      .btn-default {
+        width: 100px;
+        padding: 10px;
+      }
+      
+      .container {
+        max-width: 400px;
+        margin: 0 auto;
+        position: relative;
+      }
+      
+      .container div {
+        width: 100%;
+        display: inline-block;
+        display: none;
+      }
+      
+      .container img {
+        width: auto;
+        height: 300px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto
+      }
+      
+.opacid {
+  background-color: white;
+  opacity: 0.5;
+}
+
+    .night {
       color: white;
-      font-family: 'Abel', sans-serif;
-    }
-    
-    p {
-      margin: 30px 40px 30px 40px;
-    }
-    
-    .jumbo {
-      margin: 0;
-      padding: 150px 0 150px 0;
-    }
-    
-    .btn-default {
-      width: 150px;
-    }
-    
-    #home {
-      background: linear-gradient(to bottom, black, pink)
-    }
-    
-    #about {
-      background: linear-gradient(to bottom, pink, black)
-    }
-    
-    #portfolio {
-      background: linear-gradient(to bottom, black, pink)
-    }
-    
-    #contact {
-      background: linear-gradient(to bottom, pink, black)
-    }
-    
-    .black {
-      color: black;
-    }
-    
-    img {
-      max-height: 300px;
-      max-width: 300px;
-      transition: opacity 0.25s;
+      background-image: url('http://res.cloudinary.com/dvpxgbx82/image/upload/v1464981680/download_1_xs0pzc_nightmode_ivqeqg.png');
     }
 
-img:hover {
-  opacity: 0.25;
-}
