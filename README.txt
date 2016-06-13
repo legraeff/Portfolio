@@ -1,4 +1,7 @@
 A Portfolio page that showcases some of my projects. HTML, CSS and Bootstrap only.
+This may not be the most up to date version. You can see it at: http://codepen.io/legraeff/pen/obKqMx
+
+
 
 Project created for freecodecamp.com
 
