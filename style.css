@@ -1,0 +1,37 @@
+    body {
+      padding-top: 30px;
+      font-size: 200%;
+      font-family: 'Abel', sans-serif;
+      background-image: url('http://res.cloudinary.com/dvpxgbx82/image/upload/v1464981680/download_1_xs0pzc_daymode_mqpo8y.png');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: black;
+    }
+    
+    *::selection {
+      background-color: pink;
+    }
+    
+    p {
+      margin: 30px 40px 30px 40px;
+    }
+    
+    .jumbo {
+      margin: 0 auto;
+      padding: 200px 0 200px 0;
+    }
+    
+    .btn-default {
+      width: 100px;
+      padding: 10px;
+    }
+    
+    .container {
+      margin-left: 33%;
+    }
+    
+    
+    .night {
+      color: white;
+      background-image: url('http://res.cloudinary.com/dvpxgbx82/image/upload/v1464981680/download_1_xs0pzc_nightmode_ivqeqg.png');
+    }
