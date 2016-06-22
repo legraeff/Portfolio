@@ -1,4 +1,4 @@
-A Portfolio page that showcases some of my projects. HTML, CSS and Bootstrap only.
+A Portfolio page that showcases some of my projects. HTML, CSS and Bootstrap, JavaScript and JQuery.
 This may not be the most up to date version. You can see it at: http://codepen.io/legraeff/pen/obKqMx
 
 
