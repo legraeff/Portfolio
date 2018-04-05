@@ -2,152 +2,74 @@
 <html >
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-    
-    
-    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/ice-cream.css">
 
-        <link rel="stylesheet" href="css/style.css">
-
-    
-    
-    
-  </head>
-
-  <body>
-
-    <head>
-  <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
-  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
 <body>
+  <div class="grid">
 
-  <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-          <i id="glyph-caret" class="fa fa-caret-down" aria-hidden="true"></i>
-        </button>
-      <button id="togglesun" type="button" class="btn btn-link navbar-brand">
-          <i id="glyph-sun" class="fa fa-sun-o" aria-hidden="true"></i>
-        </button>
-      <a class="navbar-brand" href="#">Letícia Graeff</a>
-    </div>    <!--NavBar Header-->
-
-    <div class="collapse navbar-collapse" id="navbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#home">home</a></li>
-        <li><a href="#about">about</a></li>
-        <li><a href="#portfolio">portfolio</a></li>
-        <li><a href="#contact">contact</a></li>
-      </ul>
-    </div>    <!--Collapse-->
-  </nav>
+    <section class="header">
+      <h1> Will work for <br /> ice-cream </h1>
+    </section>
 
 
-  <section id="home">
-    <div class="jumbo">
-      <h1 class="text-center"> Welcome </h1>
-      
-      <p class="text-center"> Hello. My name is Letícia and this is my portfolio. I will be using this space to showcase the projects that I've already finished. </p>
-      <div class="col-md-6 col-md-offset-3 text-center">
-        <div class="btn-group">
-          <button type="button" class="btn btn-default"><a href="https://twitter.com/elegraeff"> <i class="fa fa-twitter" aria-hidden="true"></i> Twitter </a></button>
-          <button type="button" class="btn btn-default"><a href="https://github.com/legraeff"> <i class="fa fa-github" aria-hidden="true"></i> GitHub </a></button>
-          <button type="button" class="btn btn-default"><a href="http://codepen.io/legraeff/"><i class="fa fa-codepen" aria-hidden="true"></i> Codepen </a> </button>
-          <button type="button" class="btn btn-default"><a href="http://www.freecodecamp.com/legraeff"> FreeCodeCamp </a></button>
-        </div>        <!--Btn Group-->
-      </div>      <!--Grid-->
-    </div>    <!--Jumbo-->
+    <section class="photo-section">
+      <img class="selfie" src="images/selfie.jpg" />
+      <p class="selfie-description">
+        a candid photo of myself enjoying payment after a day of work
+      </p>
+    </section>
+
+    <section class="links">
+      <div class="center">
+        <a href="https://twitter.com/elegraeff"> <i class="fa fa-twitter" aria-hidden="true"></i> Twitter </a>
+        <a href="https://github.com/legraeff"> <i class="fa fa-github" aria-hidden="true"></i> GitHub </a>
+        <a href="http://codepen.io/legraeff/"><i class="fa fa-codepen" aria-hidden="true"></i> Codepen </a>
+      </div>
+    </section>
+
+    <section class="about">
+      <p> Hi there! </p>
+      <p> I'm a front-end developer! </p>
+      <div>
+        <a href="images/cv.pdf" target="_blank"> this</a> <p> is what I can offer </p>
+      </div>
+      <div>
+        <a href="#preferences"> these</a> <p>  are the preferences </p>
+      </div>
+      <div>
+        <a href="#location"> this</a> <p>  is where we can meet </p>
+      </div>
+
+
+    </section>
+
+    <section class="contact">
+      <p> deal? <br /> send to: leticia.graeff@gmail.com </p>
+    </section>
+
+    <section  id="preferences"  class="flavors">
+      <div class="ice-cream mint"> <p> Mint </p><div class="ball"></div><div class="ball-drip"></div><div class="ball-drip"></div> <div class="cone"> </div>  </div>
+      <div class="ice-cream dark-chocolate"> <p> Cacao </p> <div class="ball"></div><div class="ball-drip"></div><div class="ball-drip"></div>  <div class="cone">  </div>  </div>
+      <div class="ice-cream lemon"> <p> Lemon </p> <div class="ball"></div><div class="ball-drip"></div><div class="ball-drip"></div>  <div class="cone"> </div>  </div>
+      <div class="ice-cream acai"> <p> Açaí </p> <div class="ball"></div><div class="ball-drip"></div><div class="ball-drip"></div>  <div class="cone"> </div>  </div>
+    </section>
+
+  <section id="location" class="map">
+    <iframe width="100%" height="450" frameborder="0" style="border:0"
+src="https://www.google.com/maps/embed/v1/search?q=ice%20cream%20near%20Amsterdam%2C%20Netherlands&key=AIzaSyAtj-m2PXpCRA3K4cyr_VOPMzp-mlLW1rI" allowfullscreen></iframe>
   </section>
 
+  </div>
 
-  <section id="about">
-    <div class="jumbo">
-      <h2 class="text-center">About </h2>
-      <p class="text-center"> My interest in programming is fairly recent, but it was certainly a spurt of growth that I never expected to happen. I've been learning HTML, CSS and JavaScript, as well as some related frameworks and libraries. I've started college in 2016 to develop these and other desired skills. </p>
-      <p class="text-center"> Before falling in love with programming, I studied International Relations and got my Bachelor Degree in 2015. I'm still interested in the subject, even though I chose a different path. Other hobbies include drawing,  </p>
-
-    </div> <!--Jumbo-->
-  </section>
-
-
-  <section id="portfolio">
-    <div class="jumbo">
-      <h2 class="text-center">Portfolio </h2>
-      <div class="container" id="slide">
-        
-             
-        <div style="display: inline-block;">
-          <a href="http://codepen.io/legraeff/full/bpYBbp/">
-            <img src="http://res.cloudinary.com/dvpxgbx82/image/upload/v1466617084/thumbnails/WIKIPEDIA.png" /> </a>
-        </div> <!--Imagem Slide 1/Wikipedia-->
-
-        <div>
-          <a href="http://codepen.io/legraeff/full/aNpgbY/">
-            <img src="http://res.cloudinary.com/dvpxgbx82/image/upload/v1466617085/thumbnails/WEATHER.png" /> </a>
-        </div> <!--Imagem Slide 2/Weather-->
-
-        <div>
-          <a href="http://codepen.io/legraeff/full/JKXLJv/">
-            <img src="http://res.cloudinary.com/dvpxgbx82/image/upload/v1466617085/thumbnails/WATCH.png" /> </a>
-        </div> <!--Imagem Slide 3/Stop Watch-->
-       
-        <div>
-          <a href="http://codepen.io/legraeff/full/oLLBNo/">
-            <img src="http://res.cloudinary.com/dvpxgbx82/image/upload/v1466617084/thumbnails/TICTACTOE.png" /> </a>
-        </div> <!--Imagem Slide 4/ Tic Tac Toe-->      
-				     
-        <div style="display: inline-block;">
-          <a href="http://codepen.io/legraeff/full/EyNKKr/">
-            <img src="http://res.cloudinary.com/dvpxgbx82/image/upload/v1466617084/thumbnails/STREAMS.png" /> </a>
-        </div> <!--Imagem Slide 5/Twitch-->
-
-        <div>
-          <a href="http://codepen.io/legraeff/full/NrNyGL/">
-            <img src="http://res.cloudinary.com/dvpxgbx82/image/upload/v1466617084/thumbnails/SIMON.png" /> </a>
-        </div> <!--Imagem Slide 6/Simon-->
-
-        <div>
-          <a href="http://codepen.io/legraeff/full/PNPLEV/">
-            <img src="http://res.cloudinary.com/dvpxgbx82/image/upload/v1466617084/thumbnails/QUOTES.png" /> </a>
-        </div> <!--Imagem Slide 7/Quotes-->
-       
-        <div>
-          <a href="http://codepen.io/legraeff/full/ezZymr/">
-            <img src="http://res.cloudinary.com/dvpxgbx82/image/upload/v1466617083/thumbnails/CALCULADORA.png" /> </a>
-        </div> <!--Imagem Slide 8/Calculadora-->    
-      
-        
-         
-        </div> <!--Container-->
-         <div class="col-sm-offset-5 col-sm-2 text-center">
-        <button class="next btn btn-default">
-          <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-        </button>
-      </div> <!--Button Grid Center-->
-    
-    </div> <!--Jumbo-->
-  </section>
-
-
-  <section id="contact">
-    <div class="jumbo">
-      <h2 class="text-center"> Contact </h2>
-      <p class="text-center"> leticia.graeff@gmail.com </p>
-    </div> <!--Jumbo-->
-  </section>
-
-</body>
-    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
-
-        <script src="js/index.js"></script>
-
-    
-    
-    
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+  <script src="js/smoothScroll.js"></script>
+  <script src="js/index.js"></script>
   </body>
 </html>

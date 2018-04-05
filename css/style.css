@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee+Shade');
+@import url('https://fonts.googleapis.com/css?family=Bungee');
+body {
+  font-family: monospace;
+}
+
+section {
+  border-top: 20px double white;
+}
+
+.map {
+  background: #ffe0eb;
+}
+
+.header {
+  padding: 50px 25px;
+  background: #ffe0eb;
+}
+.header h1 {
+  font-family: 'Bungee Shade', cursive;
+  text-align: center;
+  font-size: 5em;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: #6b3e26;
+}
+
+.photo-section {
+  position: relative;
+  background: #e0e7ff;
+}
+.photo-section:after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 0;
+  background: transparent;
+  right: 20px;
+  top: 0;
+  border-right: 25px double #e0e7ff;
+  transform: translateX(50%);
+}
+.selfie {
+  width: 100%;
+  transition: 1s all;
+}
+.selfie-description {
+  position: absolute;
+  bottom: 50%;
+  right: 50%;
+  transform: translate(50%, 50%);
+  opacity: 0;
+  transition: 1s all;
+  font-size: 2em;
+  letter-spacing: 3px;
+  line-height: 0;
+}
+
+.photo-section:hover .selfie {
+  filter: opacity(.5);
+}
+.photo-section:hover .selfie-description {
+  opacity: 1;
+  line-height: 1.25;
+}
+
+.about {
+  background: #e0e7ff;
+  color: 	#6b3e26;
+  justify-content: center;
+  padding: 10px 30px;
+}
+.about p {
+  font-size: 1.5em;
+  line-height: 3;
+  display: inline-block;
+}
+.about a {
+  text-shadow: 3px 3px 1px #fff;
+  color: #222;
+  text-decoration: none;
+  font-size: 1.75em;
+  font-family: "Bungee";
+}
+
+.links {
+  background: #e0e7ff;
+  padding: 30px;
+}
+.links .center {
+  margin: 0 auto;
+  display: table;
+}
+.links a {
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.contact {
+  background: #e0e7ff;
+  color: 	#6b3e26;
+  padding: 10px 30px;
+  display: flex;
+  align-items: flex-end;
+}
+@media (min-width: 960px)  {
+  .contact {
+    border-top: 0;
+  }
+}
+.contact p {
+  font-size: 1.5em;
+  line-height: 2;
+}
+
+.flavors {
+  background: #ffe0eb;
+  min-height: 500px;
+  padding: 25px;
+  align-items: center;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+@media (max-width: 500px) {
+  .flavors {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
+  }
+}
+
+*::selection {
+  background-color: pink;
+}
