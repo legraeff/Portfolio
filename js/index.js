@@ -1,6 +1,6 @@
 $( ".ice-cream" ).mouseenter(function() {
-  $(this).children(".ball").addClass( "ball-animation" );
-  $(this).children(".ball-drip").first(".ball-drip").addClass( "big-drip" );
-  $(this).children(".ball-drip").last(".ball-drip").addClass( "small-drip" );
+  $(this).children(".ice-cream__ball").addClass( "ball-animation" );
+  $(this).children(".ice-cream__ball-drip").first(".ice-cream__ball-drip").addClass( "ice-cream__ball-drip_big" );
+  $(this).children(".ice-cream__ball-drip").last(".ice-cream__ball-drip").addClass( "ice-cream__ball-drip_small" );
 
 });

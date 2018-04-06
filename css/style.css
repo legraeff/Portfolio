@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Bungee+Shade');
 @import url('https://fonts.googleapis.com/css?family=Bungee');
+
 body {
   font-family: monospace;
 }
@@ -16,7 +17,8 @@ section {
   padding: 50px 25px;
   background: #ffe0eb;
 }
-.header h1 {
+
+.header__title {
   font-family: 'Bungee Shade', cursive;
   text-align: center;
   font-size: 5em;
@@ -40,11 +42,11 @@ section {
   border-right: 25px double #e0e7ff;
   transform: translateX(50%);
 }
-.selfie {
+.photo-section__selfie {
   width: 100%;
   transition: 1s all;
 }
-.selfie-description {
+.photo-section__selfie-description {
   position: absolute;
   bottom: 50%;
   right: 50%;
@@ -56,10 +58,10 @@ section {
   line-height: 0;
 }
 
-.photo-section:hover .selfie {
+.photo-section:hover .photo-section__selfie {
   filter: opacity(.5);
 }
-.photo-section:hover .selfie-description {
+.photo-section:hover .photo-section__selfie-description {
   opacity: 1;
   line-height: 1.25;
 }
@@ -70,12 +72,12 @@ section {
   justify-content: center;
   padding: 10px 30px;
 }
-.about p {
+.about__text {
   font-size: 1.5em;
   line-height: 3;
   display: inline-block;
 }
-.about a {
+.about__link {
   text-shadow: 3px 3px 1px #fff;
   color: #222;
   text-decoration: none;
@@ -108,7 +110,7 @@ section {
     border-top: 0;
   }
 }
-.contact p {
+.contact__text {
   font-size: 1.5em;
   line-height: 2;
 }
