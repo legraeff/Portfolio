@@ -1,156 +1,55 @@
-.ice-cream {
-  position: relative;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  justify-self: center;
+.ice-cream-card {
+  position: absolute;
+  width: 200px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 20px 0;
+  padding: 30px;
+  border-radius: 10px;
+  transition: all .5s;
+  background: #FFF;
+  -webkit-box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.75);
+  box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.75);
 }
 
-.ice-cream__title {
+.ice-cream-card__title {
+  margin-bottom: 30px;
   font-family: 'Bungee', cursive;
   text-align: center;
+  font-size: 50px;
   text-shadow: 1px 1px 0px #222;
 }
-
-
-.ice-cream__ball {
-  position: relative;
-  height: 125px;
-  width: 130px;
-  border-radius: 50%;
-  transform: rotate(315deg) translate(40px, -30px);
-}
-
-.ice-cream__ball:after {
-  content: "";
-  position: absolute;
-  height: 45%;
-  width: 15%;
-  left: 80%;
-  top: 55%;
-  border-radius: 100%;
-  border: 0;
-  border-right: 10px solid white;
-  transform: translate(-50%, -50%);
-  opacity: .5;
-}
-
-.ball-animation {
-  animation: ball-dropping forwards ease-in 1s;
-}
-
-@keyframes ball-dropping {
-  0% {
-    border-top-right-radius: 0;
+@media (max-width: 600px)  {
+  .ice-cream-card {
+    width: 100px;
+    left: 30%;
   }
-  70% {
-    transform: rotate(315deg) translate(-14px, 16px);
-  }
-  85% {
-    border-top-right-radius: 100%;
-  }
-  100% {
-    border-top-right-radius: 75%;
-    transform: rotate(315deg) translate(-14px, 16px);
+  .ice-cream-card__title {
+    font-size: 30px;
   }
 }
-/*just realized these var names are awful*/
-.ice-cream__ball-drip {
-  position: absolute;
-  width: 17px;
-  height: 0px;
-  z-index: 3;
-  border-radius: 0 0 8px 8px;
-}
-.ice-cream__ball-drip_small {
-  left: 65%;
-  animation: small-melt forwards 1s;
-  animation-delay: 1s;
-}
-.ice-cream__ball-drip_big {
-  left: 29%;
-  animation: big-melt forwards 1s;
-  animation-delay: 1.5s;
-}
-@keyframes small-melt {
-  from {
-    height: 0px;
-  }
-  to {
-    height: 30px;
-  }
-}
-@keyframes big-melt {
-  from {
-    height: 0px;
-  }
-  to {
-    height: 70px;
-  }
-}
-
-
-.ice-cream__cone {
-  position: relative;
-  width: 0;
-  height: 0;
-  margin: 0 auto;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-top: 150px solid #ffcb85;
-  z-index: 2;
-}
-.ice-cream__cone:after, .ice-cream__:before {
-  content: "";
-  position: absolute;
-  height: 150px;
+.ice-cream-card__image {
   width: 100px;
-  transform: translate(-50%,-100%);
-  clip-path: polygon(50% 100%, 100% 0%, 0% 0%);
-}
-.ice-cream__cone:after {
-  background: repeating-linear-gradient(
-  50deg,
-  #c7a577,
-  #c7a577 1px,
-  transparent 1px,
-  transparent 20px
-  );
-}
-.ice-cream__cone:before {
-  background: repeating-linear-gradient(
-  150deg,
-  #c7a577,
-  #c7a577 1px,
-  transparent 1px,
-  transparent 20px
-  );
+  height: 100%;
+  display: block;
+  margin: 0 auto;
 }
 
-
-.ice-cream_dark-chocolate .ice-cream__ball, .ice-cream_dark-chocolate .ice-cream__ball-drip {
-  background: #584b3e;
-}
-.ice-cream_dark-chocolate .ice-cream__title {
+.ice-cream-card_dark-chocolate .ice-cream-card__title {
   color: #584b3e;
 }
 
-.ice-cream_lemon .ice-cream__ball, .ice-cream_lemon .ice-cream__ball-drip {
-  background: #fff44f;
-}
-.ice-cream_lemon .ice-cream__title {
+
+.ice-cream-card_lemon .ice-cream-card__title {
   color: #fff44f;
 }
 
-.ice-cream_mint .ice-cream__ball, .ice-cream_mint .ice-cream__ball-drip {
-  background: #c2f2d0;
-}
-.ice-cream_mint .ice-cream__title {
+.ice-cream-card_mint .ice-cream-card__title {
   color: #c2f2d0;
 }
 
-.ice-cream_acai .ice-cream__ball, .ice-cream_acai .ice-cream__ball-drip {
-  background: #4F1638;
-}
-.ice-cream_acai .ice-cream__title {
+.ice-cream-card_acai .ice-cream-card__title {
   color: #4F1638;
 }

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/fav.ico" type="image/x-icon">
     <link rel="icon" href="images/fav.ico" type="image/x-icon">
-    <title>wiil-work-for-ice-cream</title>
+    <title>will-work-for-ice-cream</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/style.css">
@@ -17,13 +17,16 @@
 
       <section class="header">
         <h1 class="header__title"> Will work for <br /> ice-cream </h1>
+        <div class="header__icon" >
+          <a class="header__link" href="#about">  </a>
+        </div>
       </section>
 
 
       <section class="photo-section">
-        <img class="photo-section__selfie" src="images/selfie.jpg" />
+        <img class="photo-section__selfie" src="images/icecream.png" alt="ice-cream" />
         <p class="photo-section__selfie-description">
-          a candid photo of myself enjoying payment after a day of work
+          heaven, basically
         </p>
       </section>
 
@@ -38,20 +41,26 @@
         </div>
       </section>
 
-      <section class="about">
+      <section id="about" class="about">
         <p class="about__text"> Hi there! </p>
         <p class="about__text"> I'm a front-end developer! </p>
         <div>
-          <a class="about__link" href="images/cv.pdf" target="_blank"> this</a>
-          <p class="about__text"> is what I can offer </p>
+          <i class="about__icon about__icon-green"> <span class="about__icon__text"> 1 </span> </i>
+          <p class="about__text">
+            <a class="about__link about__link-green" href="images/cv.pdf" target="_blank"> this</a> is what I can offer
+          </p>
         </div>
         <div>
-          <a class="about__link" href="#preferences"> these</a>
-          <p class="about__text"> are the preferences </p>
+          <i class="about__icon about__icon-purple"> <span class="about__icon__text"> 2 </span>  </i>
+          <p class="about__text">
+            <a class="about__link about__link-purple" href="#preferences"> these</a> are the preferences
+          </p>
         </div>
         <div>
-          <a class="about__link" href="#location"> this</a>
-          <p class="about__text"> is where we can meet </p>
+          <i class="about__icon about__icon-yellow"> <span class="about__icon__text"> 3 </span>  </i>
+          <p class="about__text">
+            <a class="about__link about__link-yellow" href="#location"> this</a> is where we can meet
+          </p>
         </div>
       </section>
 
@@ -60,39 +69,30 @@
       </section>
 
       <section  id="preferences"  class="flavors">
-        <div class="ice-cream ice-cream_mint">
-          <p class="ice-cream__title"> Mint </p>
-          <div class="ice-cream__ball"></div>
-          <div class="ice-cream__ball-drip"></div>
-          <div class="ice-cream__ball-drip"></div>
-          <div class="ice-cream__cone"></div>
+        <div class="ice-cream-card ice-cream-card_mint">
+          <p class="ice-cream-card__title"> Mint </p>
+          <img class="ice-cream-card__image" src="./images/icecream-mint.png" />
         </div>
-        <div class="ice-cream ice-cream_dark-chocolate">
-          <p class="ice-cream__title"> Cacao </p>
-          <div class="ice-cream__ball"></div>
-          <div class="ice-cream__ball-drip"></div>
-          <div class="ice-cream__ball-drip"></div>
-          <div class="ice-cream__cone"></div>
+        <div class="ice-cream-card ice-cream-card_dark-chocolate">
+          <p class="ice-cream-card__title"> Cacao </p>
+          <img class="ice-cream-card__image" src="./images/icecream-choc.png" />
+
         </div>
-        <div class="ice-cream ice-cream_lemon">
-          <p class="ice-cream__title"> Lemon </p>
-          <div class="ice-cream__ball"></div>
-          <div class="ice-cream__ball-drip"></div>
-          <div class="ice-cream__ball-drip"></div>
-          <div class="ice-cream__cone"> </div>
+        <div class="ice-cream-card ice-cream-card_lemon">
+          <p class="ice-cream-card__title"> Lemon </p>
+          <img class="ice-cream-card__image" src="./images/icecream-lemon.png" />
+
         </div>
-        <div class="ice-cream ice-cream_acai">
-          <p class="ice-cream__title"> Açaí </p>
-          <div class="ice-cream__ball"></div>
-          <div class="ice-cream__ball-drip"></div>
-          <div class="ice-cream__ball-drip"></div>
-          <div class="ice-cream__cone"></div>
+        <div class="ice-cream-card ice-cream-card_acai">
+          <p class="ice-cream-card__title"> Açaí </p>
+          <img class="ice-cream-card__image" src="./images/icecream-acai.png" />
+
         </div>
       </section>
 
     <section id="location" class="map">
       <iframe width="100%"
-              height="450"
+              height="100%"
               frameborder="0"
               style="border:0"
               src="https://www.google.com/maps/embed/v1/search?q=ice%20cream%20near%20Amsterdam%2C%20Netherlands&key=AIzaSyAtj-m2PXpCRA3K4cyr_VOPMzp-mlLW1rI" allowfullscreen></iframe>

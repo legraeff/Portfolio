@@ -1,6 +1,18 @@
-$( ".ice-cream" ).mouseenter(function() {
-  $(this).children(".ice-cream__ball").addClass( "ball-animation" );
-  $(this).children(".ice-cream__ball-drip").first(".ice-cream__ball-drip").addClass( "ice-cream__ball-drip_big" );
-  $(this).children(".ice-cream__ball-drip").last(".ice-cream__ball-drip").addClass( "ice-cream__ball-drip_small" );
+var $iceCreamList = $('.ice-cream-card');
 
+var positionIceCreams = function() {
+  var $iceCreamList = $('.ice-cream-card');
+  var numberOfIceCreams = $iceCreamList.length;
+  $iceCreamList.each(function(i) {
+    var spacingX = -50 + 35 * i;
+    var spacingY = -50 + 5 * i;
+    $(this).css("z-index", numberOfIceCreams - i);
+    $(this).css("transform", "translate(" + spacingX + "%," + spacingY + "%)");
+  });
+}
+positionIceCreams($iceCreamList);
+
+$iceCreamList.click(function() {
+  $(this).detach().insertBefore(".ice-cream-card:first");
+  positionIceCreams();
 });
